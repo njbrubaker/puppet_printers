@@ -1,0 +1,42 @@
+//--------------------------------
+// Include
+//--------------------------------
+#include "build-Common107.xcconfig"
+
+//--------------------------------
+// File Path
+//--------------------------------
+//USER_HEADER_SEARCH_PATHS			= $(PDEROOT)/TrayPDE/Headers
+
+//--------------------------------
+// for Target types (Plug-In)
+//--------------------------------
+//MACH_O_TYPE							= mh_bundle
+WRAPPER_EXTENSION					= framework
+OTHER_LDFLAGS						= -framework Foundation -framework AppKit
+//GENERATE_PKGINFO_FILE				= YES
+
+//--------------------------------
+// for Customization
+//--------------------------------
+KM_FRAMEWORDK_NAME					= Core
+KM_FRAMEWORDK_SIGNATURE				= KMCo
+//KM_CLASS_NAME						= KMPlugin$(KM_COCOA_CLASS_POST_FIX)
+
+KM_FRAMEWORDK_ID					= $(KM_VENDOR_ID).fw.$(KM_MODEL_NAME).$(KM_FRAMEWORDK_NAME)
+PRODUCT_NAME						= pde
+
+INFOPLIST_FILE						= $(PDEROOT)/XcodeConfig/Info-plist/KMPlugin-Info.plist
+
+GCC_PREFIX_HEADER					= $(PDEROOT)/CocoaPrefix.h
+GCC_PRECOMPILE_PREFIX_HEADER		= YES
+
+
+GCC_PREPROCESSOR_DEFINITIONS		= $(GCC_PREPROCESSOR_DEFINITIONS)
+
+
+
+LIBRARY_SEARCH_PATHS				= $(SRCROOT)/../../../plugins/pde_Cocoa/Library $(SRCROOT)/Library $(SDKROOT)/usr/lib $(LIBRARY_SEARCH_PATHS) 
+INSTALL_PATH						= $(LOCAL_LIBRARY_DIR)/Printers/$(KM_VENDOR_FOLDER)/$(KM_MODEL_NAME)/PDEs
+DYLIB_COMPATIBILITY_VERSION			= 1
+DYLIB_CURRENT_VERSION				= 1

@@ -1,0 +1,11 @@
+//--------------------------------
+// Include
+//--------------------------------
+#include "conf-KMPluginFW107.xcconfig"
+
+//--------------------------------
+// for Customization
+//--------------------------------
+//KM_CLASS_NAME						= pde
+
+GCC_PREFIX_HEADER					= $(PDEROOT)/CocoaPrefix_debug.h
