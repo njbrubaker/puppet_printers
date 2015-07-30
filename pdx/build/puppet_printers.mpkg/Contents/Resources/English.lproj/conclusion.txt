@@ -1,0 +1,1 @@
+The installation was successful! Your Mac has now been configured to print to the Portland office printers. If you have any issues, please file a Help Desk ticket in Jira or visit the Help Desk.
