@@ -21,14 +21,13 @@ cranky_name="Cranky"
 rowlf_name="Rowlf"
 
 # Descriptions
-baskerville_desc="PDX-5F-N-Baskerville-CLR"
-cranky_desc="PDX-5F-SW-Cranky-BW"
+baskerville_desc="PDX-5F-SW-Baskerville-CLR"
+cranky_desc="PDX-5F-N-Cranky-BW"
 rowlf_desc="PDX-6F-NW-Rowlf-BW"
 
 # Locations
-
-baskerville_loc="5th Floor, N in Sales area" 
-cranky_loc="5th floor, NW corner in Support area"
+baskerville_loc="5th floor, NW corner in Support area" 
+cranky_loc="5th Floor, N in Sales area"
 rowlf_loc="6th floor, NW corner in Engineering area"
 
 ## Functions
