@@ -1576,7 +1576,14 @@
 						<array>
 							<dict>
 								<key>DESCRIPTION</key>
-								<array/>
+								<array>
+									<dict>
+										<key>LANGUAGE</key>
+										<string>English</string>
+										<key>VALUE</key>
+										<string>This package will install the drivers necessary to use Cranky and Rowlf. Select only this package if you wish to install the drivers but manually set up the printer on your Mac.</string>
+									</dict>
+								</array>
 								<key>OPTIONS</key>
 								<dict>
 									<key>HIDDEN</key>
@@ -1594,7 +1601,7 @@
 										<key>LANGUAGE</key>
 										<string>English</string>
 										<key>VALUE</key>
-										<string>BizHub 283 Drivers</string>
+										<string>Install BizHub 283 Drivers (Cranky, Rowlf)</string>
 									</dict>
 								</array>
 								<key>TOOLTIP</key>
@@ -1606,7 +1613,14 @@
 							</dict>
 							<dict>
 								<key>DESCRIPTION</key>
-								<array/>
+								<array>
+									<dict>
+										<key>LANGUAGE</key>
+										<string>English</string>
+										<key>VALUE</key>
+										<string>This package will install the drivers necessary to use Baskerville. Select only this package if you wish to install the drivers but manually set up the printer on your Mac.</string>
+									</dict>
+								</array>
 								<key>OPTIONS</key>
 								<dict>
 									<key>HIDDEN</key>
@@ -1624,7 +1638,7 @@
 										<key>LANGUAGE</key>
 										<string>English</string>
 										<key>VALUE</key>
-										<string>BizHub 364 Drivers</string>
+										<string>Install BizHub 364 Drivers (Baskerville)</string>
 									</dict>
 								</array>
 								<key>TOOLTIP</key>
@@ -1636,7 +1650,14 @@
 							</dict>
 							<dict>
 								<key>DESCRIPTION</key>
-								<array/>
+								<array>
+									<dict>
+										<key>LANGUAGE</key>
+										<string>English</string>
+										<key>VALUE</key>
+										<string>This package will automatically set up and enable Baskerville, Rowlf and Cranky on your Mac. Select all three packages to install the drivers and configure the printers.</string>
+									</dict>
+								</array>
 								<key>OPTIONS</key>
 								<dict>
 									<key>HIDDEN</key>
@@ -1654,7 +1675,7 @@
 										<key>LANGUAGE</key>
 										<string>English</string>
 										<key>VALUE</key>
-										<string>Configure PDX office printers</string>
+										<string>Configure Printers</string>
 									</dict>
 								</array>
 								<key>TOOLTIP</key>
@@ -1734,7 +1755,19 @@
 			<key>INTRODUCTION</key>
 			<dict>
 				<key>LOCALIZATIONS</key>
-				<array/>
+				<array>
+					<dict>
+						<key>LANGUAGE</key>
+						<string>English</string>
+						<key>VALUE</key>
+						<dict>
+							<key>PATH</key>
+							<string>/Users/nathan/code/puppet_printers/text/introduction.rtfd</string>
+							<key>PATH_TYPE</key>
+							<integer>0</integer>
+						</dict>
+					</dict>
+				</array>
 			</dict>
 			<key>LICENSE</key>
 			<dict>
@@ -1748,19 +1781,7 @@
 			<key>README</key>
 			<dict>
 				<key>LOCALIZATIONS</key>
-				<array>
-					<dict>
-						<key>LANGUAGE</key>
-						<string>English</string>
-						<key>VALUE</key>
-						<dict>
-							<key>PATH</key>
-							<string>/Users/nathan/code/puppet_printers/text/readme.txt</string>
-							<key>PATH_TYPE</key>
-							<integer>0</integer>
-						</dict>
-					</dict>
-				</array>
+				<array/>
 			</dict>
 			<key>SUMMARY</key>
 			<dict>
@@ -1772,7 +1793,7 @@
 						<key>VALUE</key>
 						<dict>
 							<key>PATH</key>
-							<string>/Users/nathan/code/puppet_printers/text/summary.txt</string>
+							<string>/Users/nathan/code/puppet_printers/text/summary.rtf</string>
 							<key>PATH_TYPE</key>
 							<integer>0</integer>
 						</dict>
@@ -1987,7 +2008,7 @@
 				</dict>
 			</array>
 			<key>NAME</key>
-			<string>pdx_printers</string>
+			<string>Puppet Labs Portland Office Printer Installer</string>
 		</dict>
 	</dict>
 	<key>TYPE</key>
