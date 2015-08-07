@@ -7,7 +7,7 @@
 # PPD Paths
 twoeightthree_ppd='/Library/Printers/PPDs/Contents/Resources/KONICAMINOLTA283.gz'
 echo $twoeightthree_ppd
-threesixfour_ppd='/Library/Printers/PPDs/Contents/Resources/KONICAMINOLTA364e.gz'
+threesixfour_ppd='/Library/Printers/PPDs/Contents/Resources/KONICAMINOLTAC364.gz'
 echo $threesixfour_ppd
 
 # IP Addresses

@@ -1,11 +1,11 @@
 #!/bin/sh
 
-## Remove Barkley
+## Remove Baskerville
 lpadmin -x "Baskerville"
 lpadmin -x "PDX-5F-SW-Baskerville-CLR"
 
 ## Remove Cranky
-lpadmin -x "Baskerville"
+lpadmin -x "Cranky"
 lpadmin -x "PDX-5F-N-Cranky-BW"
 
 ## Remove Rowlf
