@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>BuildMachineOSBuild</key>
+	<string>14F1504</string>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>English</string>
+	<key>CFBundleExecutable</key>
+	<string>KONICA MINOLTA C368 Output</string>
+	<key>CFBundleGetInfoString</key>
+	<string>version 3.13.0, Copyright (C) KONICA MINOLTA, INC.</string>
+	<key>CFBundleIdentifier</key>
+	<string>jp.konicaminolta.print.pde.C368.Output</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>KONICA MINOLTA C368 Output</string>
+	<key>CFBundlePackageType</key>
+	<string>BNDL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>3.13.0</string>
+	<key>CFBundleSignature</key>
+	<string>KMOu</string>
+	<key>CFBundleVersion</key>
+	<string>3.13.0</string>
+	<key>DTCompiler</key>
+	<string>com.apple.compilers.llvm.clang.1_0</string>
+	<key>DTPlatformBuild</key>
+	<string>6E35b</string>
+	<key>DTPlatformVersion</key>
+	<string>GM</string>
+	<key>DTSDKBuild</key>
+	<string>13F34</string>
+	<key>DTSDKName</key>
+	<string>macosx10.9</string>
+	<key>DTXcode</key>
+	<string>0640</string>
+	<key>DTXcodeBuild</key>
+	<string>6E35b</string>
+	<key>NSHumanReadableCopyright</key>
+	<string>Copyright (C) KONICA MINOLTA, INC.</string>
+	<key>NSPrincipalClass</key>
+	<string>OutputMainPlugin3528ABCB_4B02_4603_AED2_C2EA3DD28712</string>
+	<key>PMSandboxCompatiblePDEs</key>
+	<string>TRUE</string>
+</dict>
+</plist>

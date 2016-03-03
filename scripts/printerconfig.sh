@@ -2,65 +2,73 @@
 
 ## This script will install and configure the printers in the Puppet Labs Portland office. It is meant to be used as a post-flight script for the printer installation package, but can be used as a standalone script if the printer drivers are already configured.
 
+
+## Printers
+### PDX-5F-N-Rufus-CLR (Konica Minolta C368PS)
+### PDX-6F-NE-Watson-BW (Konica Minolta 284e PS)
+### PDX-5F-SW-Cranky-BW (Konica Minolta 283 PS)
+
 ## Variables
 
 # PPD Paths
-twoeightthree_ppd='/Library/Printers/PPDs/Contents/Resources/KONICAMINOLTA283.gz'
-echo $twoeightthree_ppd
-threesixfour_ppd='/Library/Printers/PPDs/Contents/Resources/KONICAMINOLTAC364.gz'
-echo $threesixfour_ppd
+cranky_ppd='/Library/Printers/PPDs/Contents/Resources/KONICAMINOLTA283.gz'
+echo $cranky_ppd
+watson_ppd='/Library/Printers/PPDs/Contents/Resources/KONICAMINOLTA284e.gz'
+echo $watson_ppd
+rufus_ppd='/Library/Printers/PPDs/Contents/Resources/KONICAMINOLTAC368.gz'
+echo $rufus_ppd
 
 # IP Addresses
-baskerville_addr="lpd://baskerville.corp.puppetlabs.net"
+rufus_addr="lpd://rufus.corp.puppetlabs.net"
 cranky_addr="lpd://cranky.corp.puppetlabs.net"
-rowlf_addr="lpd://rowlf.corp.puppetlabs.net"
+watson_addr="lpd://watson.corp.puppetlabs.net"
 
 # Names
-baskerville_name="Baskerville"
-cranky_name="Cranky"
-rowlf_name="Rowlf"
+rufus_name="PDX-5F-N-Rufus-CLR"
+cranky_name="PDX-5F-SW-Cranky-BW"
+watson_name="PDX-6F-NE-Watson-BW"
 
 # Descriptions
-baskerville_desc="PDX-5F-N-Baskerville-CLR"
+rufus_desc="PDX-5F-N-Rufus-CLR"
 cranky_desc="PDX-5F-SW-Cranky-BW"
-rowlf_desc="PDX-6F-NW-Rowlf-BW"
+watson_desc="PDX-6F-NE-Watson-BW"
 
 # Locations
 
-baskerville_loc="5th Floor, N in Sales area" 
-cranky_loc="5th floor, NW corner in Support area"
-rowlf_loc="6th floor, NW corner in Engineering area"
+rufus_loc="5th floor, N area near Sales" 
+cranky_loc="5th floor, SW corner near Support"
+watson_loc="6th floor, NE corner in Engineering"
 
 ## Functions
 
-# Check if Baskerville's driver is present and install the printer if so.
-if [ -e $threesixfour_ppd ];
+# Check if Rufus's driver is present and install the printer if so.
+if [ -e $rufus_ppd ];
 then
-echo "Adding printer $baskerville_name in location $baskerville_loc using IP address $baskerville_addr and PPD $threesixfour_ppd"
-lpadmin -p "$baskerville_name" -v "$baskerville_addr" -D "$baskerville_desc" -L "$baskerville_loc" -P "$threesixfour_ppd" -E
-echo "Baskerville added successfully."
+echo "Adding printer $rufus_name in location $rufus_loc using IP address $rufus_addr and PPD $rufus_ppd"
+lpadmin -p "$rufus_name" -v "$rufus_addr" -D "$rufus_desc" -L "$rufus_loc" -P "$rufus_ppd" -E -o printer-is-shared=false
+echo "Rufus added successfully."
 else
-echo "The printer driver for $baskerville_name has not yet been installed. Please run the installer prior to running this script."
+echo "The printer driver for $rufus_name has not yet been installed. Please run the installer prior to running this script."
 fi
 
 # Check if Cranky's driver is present and install the printer if so.
-if [ -e $twoeightthree_ppd ];
+if [ -e $cranky_ppd ];
 then
-echo "Adding printer $cranky_name in location $cranky_loc using IP address $cranky_addr and PPD $twoeightthree_ppd"
-lpadmin -p "$cranky_name" -v "$cranky_addr" -D "$cranky_desc" -L "$cranky_loc" -P "$twoeightthree_ppd" -E
+echo "Adding printer $cranky_name in location $cranky_loc using IP address $cranky_addr and PPD $cranky_ppd"
+lpadmin -p "$cranky_name" -v "$cranky_addr" -D "$cranky_desc" -L "$cranky_loc" -P "$cranky_ppd" -E -o printer-is-shared=false
 echo "Cranky added successfully."
 else
 echo "The printer driver for $cranky_name has not yet been installed. Please run the installer prior to running this script."
 fi
 
-# Check if Rowlf's driver is present and install the printer if so.
-if [ -e $twoeightthree_ppd ];
+# Check if Watson's driver is present and install the printer if so.
+if [ -e $watson_ppd ];
 then
-echo "Adding printer $rowlf_name in location $rowlf_loc using IP address $rowlf_addr and PPD $twoeightthree_ppd"
-lpadmin -p "$rowlf_name" -v "$rowlf_addr" -D "$rowlf_desc" -L "$rowlf_loc" -P "$twoeightthree_ppd" -E
-echo "Rowlf added successfully."
+echo "Adding printer $watson_name in location $watson_loc using IP address $watson_addr and PPD $watson_ppd"
+lpadmin -p "$watson_name" -v "$watson_addr" -D "$watson_desc" -L "$watson_loc" -P "$watson_ppd" -E -o printer-is-shared=false
+echo "Watson added successfully."
 else
-echo "The printer driver for $rowlf_name has not yet been installed. Please run the installer prior to running this script."
+echo "The printer driver for $watson_name has not yet been installed. Please run the installer prior to running this script."
 fi
 
 ## Report back which printers are installed

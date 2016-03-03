@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>BuildMachineOSBuild</key>
+	<string>12F45</string>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>English</string>
+	<key>CFBundleExecutable</key>
+	<string>KONICA MINOLTA 554e Stamp</string>
+	<key>CFBundleGetInfoString</key>
+	<string>version 3.12.2, Copyright (C) KONICA MINOLTA, INC.</string>
+	<key>CFBundleIdentifier</key>
+	<string>jp.konicaminolta.print.pde.554e.Stamp</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>KONICA MINOLTA 554e Stamp</string>
+	<key>CFBundlePackageType</key>
+	<string>BNDL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>3.12.2</string>
+	<key>CFBundleSignature</key>
+	<string>KMSt</string>
+	<key>CFBundleVersion</key>
+	<string>3.12.2</string>
+	<key>DTCompiler</key>
+	<string>com.apple.compilers.llvmgcc42</string>
+	<key>DTPlatformBuild</key>
+	<string>4G1004</string>
+	<key>DTPlatformVersion</key>
+	<string>GM</string>
+	<key>DTSDKBuild</key>
+	<string>11E52</string>
+	<key>DTSDKName</key>
+	<string>macosx10.7</string>
+	<key>DTXcode</key>
+	<string>0451</string>
+	<key>DTXcodeBuild</key>
+	<string>4G1004</string>
+	<key>NSHumanReadableCopyright</key>
+	<string>Copyright (C) KONICA MINOLTA, INC.</string>
+	<key>NSPrincipalClass</key>
+	<string>StampMainPluginDA315150_B8D7_4806_824E_E84F47FEAFF2</string>
+	<key>PMSandboxCompatiblePDEs</key>
+	<string>TRUE</string>
+</dict>
+</plist>
